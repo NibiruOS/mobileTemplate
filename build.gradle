@@ -1,0 +1,3 @@
+plugins {
+  id "com.orctom.archetype" version "1.4.4"
+}
