@@ -48,16 +48,16 @@
 		12358E3401C22D932086BF77 /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ../build/moe/main/application.jar; sourceTree = SOURCE_ROOT; name = application.jar; };
 		2702DBBCAED4DC3C4D854C47 /* MOE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOE.framework; sourceTree = MOE_FRAMEWORK_PATH; };
 		434762E020BC8E752F66AA79 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ../src/main/resources/LaunchScreen.xib; sourceTree = SOURCE_ROOT; name = LaunchScreen.xib; };
-		5EC97B0441D04DF66DBDAAC4 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC97B0441D04DF66DBDAAC4 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97758A2119F05480893791D8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A17FFB6195560E6ECD5F3F70 /* Info-Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Test/Info-Test.plist"; sourceTree = SOURCE_ROOT; name = "Info-Test.plist"; };
-		B9E603DA7CEA8631EBCFE719 /* Demo-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17FFB6195560E6ECD5F3F70 /* Info-Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Test/Info-Test.plist"; sourceTree = SOURCE_ROOT; name = "Info-Test.plist"; };
+		B9E603DA7CEA8631EBCFE719 /* App-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5E64E14F6CF5DFA0826744 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/test/preregister.txt; sourceTree = SOURCE_ROOT; name = preregister.txt; };
 		D5B48EE7B872C656F779CDFF /* classlist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/test/classlist.txt; sourceTree = SOURCE_ROOT; name = classlist.txt; };
 		D640F0FB4D4BE5965411182C /* moe-main-interfaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "moe-main-interfaces.m"; path = "../build/moe/main/ui-headers/moe-main-interfaces.m"; sourceTree = "<group>"; };
 		E02C4948C9DCF0E32AED774B /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/main/preregister.txt; sourceTree = SOURCE_ROOT; name = preregister.txt; };
 		EBBC9AB8EB0688CCEEABF665 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
-		EE1E1AC86F1875896DC7D8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Demo/Info.plist; sourceTree = SOURCE_ROOT; name = Info.plist; };
+		EE1E1AC86F1875896DC7D8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App/Info.plist; sourceTree = SOURCE_ROOT; name = Info.plist; };
 		F0E00E503B04E289C194E243 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +85,8 @@
 			isa = PBXGroup;
 			sourceTree = "<group>";
 			children = (
-				CCB65E8691F0E440E102128F /* Demo */,
-				634B014B555345479FCC1B40 /* Demo-Test */,
+				CCB65E8691F0E440E102128F /* App */,
+				634B014B555345479FCC1B40 /* App-Test */,
 				D1101C8DEB18CC9C04A6A5BB /* Frameworks */,
 				CE51E07DD9B882919EF46AD0 /* Products */,
 				6ECBEAACD23BACF1FA658DC6 /* Multi-OS Engine */,
@@ -104,10 +104,10 @@
 				D5B48EE7B872C656F779CDFF /* classlist.txt */,
 			);
 		};
-		634B014B555345479FCC1B40 /* Demo-Test */ = {
+		634B014B555345479FCC1B40 /* App-Test */ = {
 			isa = PBXGroup;
-			name = "Demo-Test";
-			path = "Demo-Test";
+			name = "App-Test";
+			path = "App-Test";
 			sourceTree = "<group>";
 			children = (
 				0D43ECA8F49EC3223DEC4D6C /* Supporting Files */,
@@ -121,10 +121,10 @@
 				D640F0FB4D4BE5965411182C /* moe-main-interfaces.m */,
 			);
 		};
-		CCB65E8691F0E440E102128F /* Demo */ = {
+		CCB65E8691F0E440E102128F /* App */ = {
 			isa = PBXGroup;
-			name = Demo;
-			path = Demo;
+			name = App;
+			path = App;
 			sourceTree = "<group>";
 			children = (
 				EAC84922DBC1BC43374F2D69 /* Supporting Files */,
@@ -136,8 +136,8 @@
 			path = Products;
 			sourceTree = "<group>";
 			children = (
-				5EC97B0441D04DF66DBDAAC4 /* Demo.app */,
-				B9E603DA7CEA8631EBCFE719 /* Demo-Test.app */,
+				5EC97B0441D04DF66DBDAAC4 /* App.app */,
+				B9E603DA7CEA8631EBCFE719 /* App-Test.app */,
 			);
 		};
 		D1101C8DEB18CC9C04A6A5BB /* Frameworks */ = {
@@ -165,12 +165,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22AD468E4549C232D4754800 /* Demo-Test */ = {
+		22AD468E4549C232D4754800 /* App-Test */ = {
 			isa = PBXNativeTarget;
-			name = "Demo-Test";
-			productName = "Demo-Test";
+			name = "App-Test";
+			productName = "App-Test";
 			productType = "com.apple.product-type.application";
-			buildConfigurationList = 6E907138537F915DEDDE5D3F /* Build configuration list for PBXNativeTarget "Demo-Test" */;
+			buildConfigurationList = 6E907138537F915DEDDE5D3F /* Build configuration list for PBXNativeTarget "App-Test" */;
 			buildPhases = (
 				E65AFE625C09331779D9A930 /* Compile Sources (MOE) */,
 				CE2D39B0DB5C96FC112BDE9E /* Frameworks */,
@@ -178,14 +178,14 @@
 				DFA3493FB503CF2F3E268F4F /* Sources */,
 				4160C2C280D25B3E72C41F54 /* Embed Frameworks */,
 			);
-			productReference = B9E603DA7CEA8631EBCFE719 /* Demo-Test.app */;
+			productReference = B9E603DA7CEA8631EBCFE719 /* App-Test.app */;
 		};
-		E94E72C5A3363AB38A1FC0FD /* Demo */ = {
+		E94E72C5A3363AB38A1FC0FD /* App */ = {
 			isa = PBXNativeTarget;
-			name = Demo;
-			productName = Demo;
+			name = App;
+			productName = App;
 			productType = "com.apple.product-type.application";
-			buildConfigurationList = C781B8766E1A3F4062306CA7 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = C781B8766E1A3F4062306CA7 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				30A204A03ADFC57798E63171 /* Compile Sources (MOE) */,
 				8BD940188F96D44BD3723B1F /* Frameworks */,
@@ -193,7 +193,7 @@
 				914A16E6AFEA9F9BBE283FEA /* Sources */,
 				E7C24C79C9B0D000AC8882AD /* Embed Frameworks */,
 			);
-			productReference = 5EC97B0441D04DF66DBDAAC4 /* Demo.app */;
+			productReference = 5EC97B0441D04DF66DBDAAC4 /* App.app */;
 		};
 /* End PBXNativeTarget section */
 
@@ -215,10 +215,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E94E72C5A3363AB38A1FC0FD /* Demo */,
-				22AD468E4549C232D4754800 /* Demo-Test */,
+				E94E72C5A3363AB38A1FC0FD /* App */,
+				22AD468E4549C232D4754800 /* App-Test */,
 			);
-			buildConfigurationList = F1EE9E7EC2D1C8F9F1AE2050 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = F1EE9E7EC2D1C8F9F1AE2050 /* Build configuration list for PBXProject "App" */;
 		};
 /* End PBXProject section */
 
@@ -306,9 +306,9 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = "Demo-Test";
+				PRODUCT_NAME = "App-Test";
 				STRIP_STYLE = "non-global";
-				INFOPLIST_FILE = "Demo-Test/Info-Test.plist";
+				INFOPLIST_FILE = "App-Test/Info-Test.plist";
 			};
 			baseConfigurationReference = F0E00E503B04E289C194E243 /* build.xcconfig */;
 		};
@@ -321,9 +321,9 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = "Demo-Test";
+				PRODUCT_NAME = "App-Test";
 				STRIP_STYLE = "non-global";
-				INFOPLIST_FILE = "Demo-Test/Info-Test.plist";
+				INFOPLIST_FILE = "App-Test/Info-Test.plist";
 			};
 			baseConfigurationReference = F0E00E503B04E289C194E243 /* build.xcconfig */;
 		};
@@ -336,9 +336,9 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = Demo;
+				PRODUCT_NAME = App;
 				STRIP_STYLE = "non-global";
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 			};
 			baseConfigurationReference = EBBC9AB8EB0688CCEEABF665 /* build.xcconfig */;
 		};
@@ -351,9 +351,9 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = Demo;
+				PRODUCT_NAME = App;
 				STRIP_STYLE = "non-global";
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 			};
 			baseConfigurationReference = EBBC9AB8EB0688CCEEABF665 /* build.xcconfig */;
 		};
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E907138537F915DEDDE5D3F /* Build configuration list for PBXNativeTarget "Demo-Test" */ = {
+		6E907138537F915DEDDE5D3F /* Build configuration list for PBXNativeTarget "App-Test" */ = {
 			isa = XCConfigurationList;
 			defaultConfigurationIsVisible = 0;
 			buildConfigurations = (
@@ -457,7 +457,7 @@
 				103B347CC3DFE535AA804130 /* Release */,
 			);
 		};
-		C781B8766E1A3F4062306CA7 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		C781B8766E1A3F4062306CA7 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			defaultConfigurationIsVisible = 0;
 			buildConfigurations = (
@@ -465,7 +465,7 @@
 				39A271B3CC5D3645E72D3D27 /* Release */,
 			);
 		};
-		F1EE9E7EC2D1C8F9F1AE2050 /* Build configuration list for PBXProject "Demo" */ = {
+		F1EE9E7EC2D1C8F9F1AE2050 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

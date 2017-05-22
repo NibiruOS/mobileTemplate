@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.nibiru.mobile.demo.client.ios</string>
+	<string>@packageName@.client.ios</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -25,7 +25,7 @@
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>MOE.Main.Class</key>
-	<string>org.nibiru.mobile.demo.client.ios.Main</string>
+	<string>@packageName@.client.ios.Main</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIRequiredDeviceCapabilities</key>

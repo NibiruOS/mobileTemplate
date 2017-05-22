@@ -24,9 +24,9 @@ test { exclude '**' }
 
 moe {
 	xcode {
-		project 'xcode/@name@.xcodeproj'
-		mainTarget = '@name@'
-		testTarget = '@name@-Test'
+		project 'xcode/App.xcodeproj'
+		mainTarget = 'App'
+		testTarget = 'App-Test'
 	}
 }
 
