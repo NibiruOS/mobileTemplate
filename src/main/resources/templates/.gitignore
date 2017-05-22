@@ -9,10 +9,10 @@ bin
 gen
 target
 .DS_Store
-/org.nibiru.mobile.demo.client.gwt/src/main/webapp/demo
-/org.nibiru.mobile.demo.client.gwt/src/main/webapp/WEB-INF/deploy
-/org.nibiru.mobile.demo.client.gwt/src/main/webapp/WEB-INF/lib
-/org.nibiru.mobile.demo.client.gwt/war
+/@packageName@.client.gwt/src/main/webapp/@name@
+/@packageName@.client.gwt/src/main/webapp/WEB-INF/@name@
+/@packageName@.client.gwt/src/main/webapp/WEB-INF/lib
+/@packageName@.client.gwt/war
 .idea
 /**/*.iml
 /**/gradle/

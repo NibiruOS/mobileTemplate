@@ -1,12 +1,9 @@
-package org.nibiru.mobile.demo.client.gwt.app;
+package @packageName@.client.gwt.app;
 
 import com.google.gwt.core.client.GWT;
-import org.nibiru.mobile.demo.client.core.api.business.security.Session;
-import org.nibiru.mobile.demo.client.core.impl.ui.UiMessages;
-import org.nibiru.mobile.demo.client.gwt.service.AutoBeanDtoFactory;
-import org.nibiru.mobile.demo.client.gwt.ui.GwtUiMessages;
-import org.nibiru.mobile.demo.shared.api.service.StatusDto;
-import org.nibiru.mobile.demo.shared.api.service.security.UserDto;
+import @packageName@.client.core.impl.ui.UiMessages;
+import @packageName@.client.gwt.service.AutoBeanDtoFactory;
+import @packageName@.client.gwt.ui.GwtUiMessages;
 
 import org.nibiru.mobile.core.api.config.BaseUrl;
 import org.nibiru.mobile.core.api.serializer.Serializer;
@@ -20,13 +17,7 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class DemoGwtModule {
-    @Provides
-    @Singleton
-    public Session session() {
-        return new Session();
-    }
-
+public class GwtModule {
     /* UI bindings */
     @Provides
     public UiMessages getUiMessages() {
@@ -42,7 +33,7 @@ public class DemoGwtModule {
     @Provides
     @BaseUrl
     public String baseUrl() {
-        return GWT.getHostPageBaseURL() + "../org.nibiru.mobile.demo.server/";
+        return GWT.getHostPageBaseURL() + "../@packageName@.server/";
     }
 
     @Provides
@@ -55,13 +46,9 @@ public class DemoGwtModule {
         return GWT.create(AutoBeanDtoFactory.class);
     }
 
-    @Provides
-    public StatusDto statusDto(AutoBeanDtoFactory dtoFactory) {
-        return dtoFactory.status().as();
-    }
-
-    @Provides
-    public UserDto user(AutoBeanDtoFactory dtoFactory) {
-        return dtoFactory.user().as();
-    }
+    // TODO: Add any DTO binding here, like:
+    //@Provides
+    //public StatusDto statusDto(AutoBeanDtoFactory dtoFactory) {
+    //    return dtoFactory.status().as();
+    //}
 }

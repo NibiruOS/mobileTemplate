@@ -22,7 +22,7 @@ dependencies {
 
 gwt {
     gwtVersion='2.8.0'
-    modules 'org.nibiru.mobile.demo.client.gwt.Module'
+    modules '@packageName@.client.gwt.Module'
     minHeapSize = "512M";
     maxHeapSize = "8G";
 }

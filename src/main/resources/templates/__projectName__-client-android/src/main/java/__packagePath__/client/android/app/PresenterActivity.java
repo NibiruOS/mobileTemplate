@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import org.nibiru.mobile.android.ui.place.IntentPlace;
 
 import javax.annotation.Nullable;
 
-import static org.nibiru.mobile.demo.client.android.app.ComponentHelper.component;
+import static @packageName@.client.android.app.ComponentHelper.component;
 
 /**
  * Presenter activity.

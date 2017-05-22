@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import android.app.Activity;
 
@@ -7,7 +7,7 @@ public final class ComponentHelper {
     }
 
     public static UserComponent component(Activity activity) {
-        DemoApplication app = (DemoApplication) activity.getApplication();
+        AppApplication app = (AppApplication) activity.getApplication();
         return DaggerUserComponent.builder()
                 .activityComponent(DaggerActivityComponent.builder()
                         .activityModule(new ActivityModule(activity))

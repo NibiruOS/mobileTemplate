@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.core.impl.ui;
+package @packageName@.client.core.impl.ui;
 
 import org.nibiru.ui.core.api.style.Color;
 import org.nibiru.ui.core.api.style.Size;
@@ -23,13 +23,6 @@ public class Styles {
                 .width(Size.MATCH_PARENT)
                 .height(Size.MATCH_PARENT)
                 .backgroundColor(Color.WHITE)
-                .build();
-    }
-
-    public Style mainMenu() {
-        return style.get()
-                .width(Size.WRAP_CONTENT)
-                .height(Size.WRAP_CONTENT)
                 .build();
     }
 

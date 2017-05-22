@@ -1,8 +1,8 @@
-package org.nibiru.mobile.demo.client.ios;
+package @packageName@.client.ios;
 
 import org.moe.natj.general.Pointer;
 import org.moe.natj.objc.ann.Selector;
-import org.nibiru.mobile.demo.client.ios.app.DaggerInjector;
+import @packageName@.client.ios.app.DaggerInjector;
 
 import apple.NSObject;
 import apple.foundation.NSDictionary;
@@ -44,5 +44,4 @@ public class Main extends NSObject implements UIApplicationDelegate {
     public UIWindow window() {
         return window;
     }
-
 }

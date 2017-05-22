@@ -1,16 +1,14 @@
-package @package@.@name@.client.core.impl.ui;
+package @packageName@.client.core.impl.ui;
 
 import org.nibiru.mobile.core.api.ui.AlertManager;
+import org.nibiru.mobile.core.api.ui.mvp.View;
 import org.nibiru.mobile.core.api.ui.place.Place;
-import org.nibiru.mobile.core.api.ui.place.PlaceManager;
-import org.nibiru.ui.core.api.HasClickHandler;
+import org.nibiru.mobile.core.impl.mvp.BasePresenter;
 
 import javax.inject.Inject;
 
-import static com.google.common.base.Preconditions.checkNotNull;
-
 public class HomePresenter extends BasePresenter<HomePresenter.Display> {
-    public interface Display extends DemoView {
+    public interface Display extends View {
     }
 
     @Inject

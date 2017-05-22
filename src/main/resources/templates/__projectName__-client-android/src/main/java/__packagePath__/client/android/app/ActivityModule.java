@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import android.app.Activity;
 import android.content.Context;

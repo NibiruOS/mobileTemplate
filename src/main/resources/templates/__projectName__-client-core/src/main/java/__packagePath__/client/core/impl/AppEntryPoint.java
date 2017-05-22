@@ -1,4 +1,4 @@
-package @package@.demo.client.core.impl;
+package @packageName@.client.core.impl;
 
 import org.nibiru.mobile.core.api.app.EntryPoint;
 import org.nibiru.mobile.core.api.ui.place.DefaultPlaces;

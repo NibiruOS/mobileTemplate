@@ -1,6 +1,6 @@
 rootProject.name = '@projectName@'
 
 include '@projectName@-client-android'
-include '@projectName@-client.core'
-include '@projectName@-client.gwt'
-include '@projectName@-client.ios'
+include '@projectName@-client-core'
+include '@projectName@-client-gwt'
+include '@projectName@-client-ios'

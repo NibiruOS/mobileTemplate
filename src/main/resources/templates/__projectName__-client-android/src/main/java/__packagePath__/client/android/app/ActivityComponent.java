@@ -1,11 +1,10 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 
-import org.nibiru.mobile.demo.client.core.api.business.security.Session;
-import org.nibiru.mobile.demo.client.core.impl.ui.UiMessages;
+import @packageName@.client.core.impl.ui.UiMessages;
 
 import dagger.Component;
 
@@ -17,9 +16,4 @@ public interface ActivityComponent {
     Context context();
 
     Resources resources();
-
-    ////
-    Session session();
-
-    UiMessages uiMessages();
 }

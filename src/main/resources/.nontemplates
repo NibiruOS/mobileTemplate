@@ -6,6 +6,7 @@
 **/*.xz
 **/*.tar
 **/*.7z
+**/*.png
 gradle/
 .gradle/
 gradlew

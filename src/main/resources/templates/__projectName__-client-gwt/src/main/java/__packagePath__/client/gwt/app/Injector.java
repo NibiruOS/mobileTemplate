@@ -1,6 +1,6 @@
-package org.nibiru.mobile.demo.client.gwt.app;
+package @packageName@.client.gwt.app;
 
-import org.nibiru.mobile.demo.client.core.impl.ioc.DemoModule;
+import @packageName@.client.core.impl.ioc.AppModule;
 
 import org.nibiru.mobile.core.api.app.Bootstrap;
 import org.nibiru.mobile.gwt.ioc.DefaultGwtHardwareModule;
@@ -13,8 +13,8 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 
-@Component(modules = {DemoModule.class,
-        DemoGwtModule.class,
+@Component(modules = {AppModule.class,
+        GwtModule.class,
         DefaultGwtModule.class,
         DefaultGwtHardwareModule.class,
         DefaultGwtPlacesModule.class,

@@ -1,7 +1,4 @@
-package org.nibiru.mobile.demo.client.android.app;
-
-import org.nibiru.mobile.demo.client.core.impl.ioc.DemoJavaModule;
-import org.nibiru.mobile.demo.client.core.impl.ioc.DemoModule;
+package @packageName@.client.android.app;
 
 import org.nibiru.mobile.android.ioc.DefaultAndroidHardwareModule;
 import org.nibiru.mobile.android.ioc.DefaultAndroidModule;
@@ -14,9 +11,9 @@ import org.nibiru.ui.core.impl.ioc.CoreModule;
 
 import dagger.Component;
 
-@Component(modules = {DemoModule.class,
-        DemoJavaModule.class,
-        DemoAndroidModule.class,
+@Component(modules = {@packageName@.client.core.impl.ioc.AppModule.class,
+        @packageName@.client.core.impl.ioc.JavaModule.class,
+        AppAndroidModule.class,
         DefaultJavaModule.class,
         DefaultAndroidModule.class,
         DefaultAndroidHardwareModule.class,
@@ -29,6 +26,4 @@ public interface UserComponent extends ActivityComponent {
     Bootstrap getBootstrap();
 
     PresenterAdapter getPresenterAdapter();
-
-    PlaceManager getPlaceManager();
 }

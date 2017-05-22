@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.gwt.app;
+package @packageName@.client.gwt.app;
 
 import com.google.gwt.core.client.EntryPoint;
 

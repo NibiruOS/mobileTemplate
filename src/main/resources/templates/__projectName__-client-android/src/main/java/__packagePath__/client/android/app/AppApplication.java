@@ -1,10 +1,10 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
-public class DemoApplication extends Application {
+public class AppApplication extends Application {
     private final AppComponent appComponent = DaggerAppComponent.create();
 
     public AppComponent getAppComponent() {

@@ -1,4 +1,4 @@
-package org.nibiru.mobile.demo.client.android.app;
+package @packageName@.client.android.app;
 
 import java.lang.annotation.Retention;
 

@@ -1,17 +1,10 @@
-package org.nibiru.mobile.demo.client.android.app;
-
-import org.nibiru.mobile.demo.client.core.api.business.security.Session;
-import org.nibiru.mobile.demo.client.core.impl.ioc.DemoSingletonJavaModule;
-import org.nibiru.mobile.demo.client.core.impl.ui.UiMessages;
+package @packageName@.client.android.app;
 
 import javax.inject.Singleton;
 
 import dagger.Component;
 
 @Singleton
-@Component(modules = DemoSingletonJavaModule.class)
+@Component()
 public interface AppComponent {
-    Session session();
-
-    UiMessages uiMessages();
 }
