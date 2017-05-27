@@ -1,0 +1,29 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		maven { url "https://jitpack.io" }
+	}
+
+	dependencies {
+		classpath 'com.edibleday:teavm-gradle-plugin:0.4.3.2'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: "jetty"
+apply plugin: "net.ltgt.apt"
+apply plugin: 'war'
+apply plugin: "com.edibleday.teavm"
+
+mainClassName = "@packageName@.client.teavm.app.Main"
+
+dependencies {
+	compile project(":@name@-client-core")
+	compile "io.github.nibiruos.ui:org.nibiru.ui.teavm:${nibiruUiVersion}";
+	compile "io.github.nibiruos.async:org.nibiru.async.teavm:${nibiruAsyncVersion}"
+	compile "io.github.nibiruos.mobile:org.nibiru.mobile.teavm:${nibiruMobileVersion}";
+	compile "com.google.guava:guava-gwt:${guavaVersion}"
+	compile "com.google.dagger:dagger-gwt:${daggerVersion}"
+	apt "com.google.dagger:dagger-compiler:${daggerVersion}"
+	compile files("${buildDir}/generated/source/apt/main/")
+}
