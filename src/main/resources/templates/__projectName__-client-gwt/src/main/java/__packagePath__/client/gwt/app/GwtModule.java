@@ -2,16 +2,11 @@ package @packageName@.client.gwt.app;
 
 import com.google.gwt.core.client.GWT;
 import @packageName@.client.core.impl.ui.UiMessages;
-import @packageName@.client.gwt.service.AutoBeanDtoFactory;
 import @packageName@.client.gwt.ui.GwtUiMessages;
+import @packageName@.client.gwt.service.GwtSerializer;
 
 import org.nibiru.mobile.core.api.config.BaseUrl;
 import org.nibiru.mobile.core.api.serializer.Serializer;
-import org.nibiru.mobile.gwt.app.DatabaseBootstrap;
-import org.nibiru.mobile.gwt.data.DummyDatabaseBootstrap;
-import org.nibiru.mobile.gwt.serializer.AutoBeanSerializer;
-
-import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -24,12 +19,6 @@ public class GwtModule {
         return GWT.create(GwtUiMessages.class);
     }
 
-    /* Database bindings */
-    @Provides
-    public DatabaseBootstrap getDatabaseBootstrap(DummyDatabaseBootstrap dbBootstrap) {
-        return dbBootstrap;
-    }
-
     @Provides
     @BaseUrl
     public String baseUrl() {
@@ -37,18 +26,7 @@ public class GwtModule {
     }
 
     @Provides
-    public Serializer serializer(AutoBeanDtoFactory dtoFactory) {
-        return new AutoBeanSerializer(dtoFactory);
+    public Serializer serializer(GwtSerializer serializer) {
+        return serializer;
     }
-
-    @Provides
-    public AutoBeanDtoFactory autoBeanDtoFactory() {
-        return GWT.create(AutoBeanDtoFactory.class);
-    }
-
-    // TODO: Add any DTO binding here, like:
-    //@Provides
-    //public StatusDto statusDto(AutoBeanDtoFactory dtoFactory) {
-    //    return dtoFactory.status().as();
-    //}
 }

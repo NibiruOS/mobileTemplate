@@ -1,4 +1,4 @@
-package @packageName@.client.android.app;
+package @packageName@.client.android.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,18 +14,18 @@ import org.nibiru.mobile.android.ui.place.IntentPlace;
 
 import javax.annotation.Nullable;
 
-import static @packageName@.client.android.app.ComponentHelper.component;
+import javax.inject.Inject;
 
-/**
- * Presenter activity.
- */
+import dagger.android.AndroidInjection;
+
 public class PresenterActivity extends AppCompatActivity {
-    private PresenterAdapter adapter;
+    @Inject
+    PresenterAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
-        adapter = getPresenterAdapter();
         setContentView(adapter.onCreate(new IntentPlace(getIntent())));
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
@@ -95,10 +95,5 @@ public class PresenterActivity extends AppCompatActivity {
                                     Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         adapter.onActivityResult(requestCode, resultCode, data);
-    }
-
-    private PresenterAdapter getPresenterAdapter() {
-        return component(this)
-                .getPresenterAdapter();
     }
 }

@@ -1,27 +1,26 @@
 buildscript {
     repositories {
+        google()
         jcenter()
         maven {
             url "https://plugins.gradle.org/m2/"
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
-        classpath 'me.tatarka:gradle-retrolambda:3.3.0-beta4'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-        classpath "net.ltgt.gradle:gradle-apt-plugin:0.9"
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath "net.ltgt.gradle:gradle-apt-plugin:0.17"
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+        classpath 'org.akhikhl.gretty:gretty:+'
+        classpath 'org.multi-os-engine:moe-gradle:1.4.+'
     }
 }
 
 project.ext {
-    nibiruModelVersion = '0.1-SNAPSHOT'
-    nibiruUiVersion = '0.1-SNAPSHOT'
-    nibiruAsyncVersion = '0.1-SNAPSHOT'
-    nibiruMobileVersion = '0.4-SNAPSHOT'
-    guiceVersion = '3.0'
-    daggerVersion = '2.7'
-    guavaVersion = '20.0'
+    nibiruModelVersion = '1.0.1'
+    nibiruUiVersion = '1.0.1'
+    nibiruAsyncVersion = '1.0.1'
+    nibiruMobileVersion = '1.0.1'
+    daggerVersion = '2.16'
 }
 
 allprojects {
@@ -32,6 +31,7 @@ allprojects {
         mavenCentral()
         jcenter()
         mavenLocal()
+        google()
         maven {
             url "https://oss.sonatype.org/content/repositories/snapshots/"
         }
@@ -46,5 +46,4 @@ allprojects {
 
 subprojects {
     apply plugin: 'maven'
-    apply plugin: 'me.tatarka.retrolambda'
 }

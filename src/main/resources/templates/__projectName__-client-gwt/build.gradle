@@ -1,11 +1,15 @@
 apply plugin: 'java'
-apply plugin: "jetty"
 apply plugin: "net.ltgt.apt"
 apply plugin: 'gwt'
 apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
 
 jar {
    from sourceSets.main.java.srcDirs 
+}
+
+gretty {
+    contextPath = '/@name@'
 }
 
 dependencies {
@@ -13,7 +17,6 @@ dependencies {
 	compile "io.github.nibiruos.ui:org.nibiru.ui.gwt:${nibiruUiVersion}";
 	compile "io.github.nibiruos.async:org.nibiru.async.gwt:${nibiruAsyncVersion}"
 	compile "io.github.nibiruos.mobile:org.nibiru.mobile.gwt:${nibiruMobileVersion}";
-	compile "com.google.guava:guava-gwt:${guavaVersion}"
 	compile "com.google.dagger:dagger-gwt:${daggerVersion}"
 	apt "com.google.dagger:dagger-compiler:${daggerVersion}"
 	compile "org.ow2.asm:asm:5.0.4" // Just for GWT 2.8.0 problems with ASM 3.1
