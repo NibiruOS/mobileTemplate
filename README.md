@@ -5,7 +5,7 @@ This is a template for empty [Nibiru Mobile](../../../mobile) project creation.
  * [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/) (tested on Java 8)
  * [Gradle](https://gradle.org/)
  * [Android Studio](https://developer.android.com/studio/)
- * [Multi-OS Engine Plugin](https://multi-os-engine.org/start/) (Only if oyu want to run it on iOS)
+ * [Multi-OS Engine Plugin](https://multi-os-engine.org/start/) (Only if you want to run it on iOS)
 
 ## QuickStart
 Just clone the repo and run:
